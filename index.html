@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSCI 165 - Summer 2025 | Assignment 1</title>
+
+<style>
+body {
+background: #ffff99;
+font-family: Verdana, sans-serif;
+margin: 2rem;
+}
+table {
+border: 3px solid #000;
+border-collapse: collapse;
+width: 100%;
+max-width: 750px;
+margin: auto;
+}
+td,
+th {
+border: 2px solid #000;
+width: 33%;
+height: 120px;
+text-align: center;
+vertical-align: middle;
+}
+.banner {
+font-size: 1.4rem;
+font-weight: 700;
+background: burlywood;
+}
+
+#displayBox {
+width: 320px;
+height: 240px;
+object-fit: contain;
+border: 3px dashed #666;
+margin: 1rem auto;
+display: block;
+}
+#hometown {
+background: lightgray;
+padding: 1rem;
+margin-top: 2rem;
+border-radius: 12px;
+}
+.f1 {
+font-family: "Times New Roman", serif;
+}
+.f2 {
+font-family: "Courier New", monospace;
+}
+.f3 {
+font-family: "Georgia", cursive;
+}
+.f4 {
+font-family: "Comic Sana MS", serif;
+}
+
+.s1 {
+font-size: 1.2rem;
+}
+.s2 {
+font-size: 1rem;
+}
+.s3 {
+font-size: 0.85rem;
+}
+.s4 {
+font-size: 0.75rem;
+}
+</style>
+
+<script>
+function showImage(src) {
+document.getElementById("displayBox").src = src;
+}
+</script>
+</head>
+
+<body>
+<table>
+<tr>
+<td colspan="3" class="banner">CSCI 165 - Summer 2025</td>
+</tr>
+
+<tr>
+<td>
+<img
+src="images/inder.jpeg"
+alt="inderpreet Singh"
+style="height: 100%; width: auto"
+/>
+</td>
+<td><strong>Name:</strong><br />Inderpreet singh</td>
+<td><strong>Student #:</strong><br />814472</td>
+</tr>
+
+<tr>
+<td>
+<img
+src="images/elephant-2048x1382.jpg"
+alt="Elephant"
+style="height: 100%; width: auto"
+/>
+</td>
+<td colspan="2" rowspan="2">
+Fun fact: elephants the worlds largest animal!
+</td>
+</tr>
+
+<tr>
+<td>
+<img src="images/Greyhound-bus.webp" alt="Bus" style="height: 100%; width: auto" />
+</td>
+</tr>
+
+<tr>
+<td colspan="3">
+Created with basic HTML tags — no external libraries.
+</td>
+</tr>
+</table>
+
+<h2 style="text-align: center; margin-top: 2.5rem">Image Viewer</h2>
+
+<div style="text-align: center">
+<button onclick="showImage('images/inder.jpeg')">Show My Photo</button>
+<button onclick="showImage('images/tiger.jpg')">Show Tiger</button>
+</div>
+
+<img id="displayBox" src="" alt="Selected image will appear here" />
+
+<div id="hometown">
+<p class="f1 s1">
+Welcome to <strong>Surrey, BC</strong> — The mordern and growing city
+<p class="f2 s2">
+surrey is known for its
+<em>beauty, greenery,</em> walking trails.
+</p>
+<p class="f3 s3">
+Every sesons we have <u>different festivals to celbrate and we also</u> celebrates food & culture from
+India.
+</p>
+<p class="f4 s4">
+Plus, the
+<abbr title="Kwantlen Polytechnic University">KPU</abbr> campus keeps
+the vibe young and innovative.
+</p>
+</div>
+</body>
+</html>
